@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto - ActúaYa!</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* Estilo extra solo para contacto */
+.contact-container {
+  max-width: 600px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.contact-container h2 {
+  text-align: center;
+  color: #15803d;
+  margin-bottom: 25px;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-container input,
+.contact-container textarea {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #cfe8d6;
+  font-size: 1em;
+  transition: all 0.3s;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  border-color: #16a34a;
+  box-shadow: 0 0 8px rgba(22,163,74,0.3);
+  outline: none;
+}
+
+.contact-container button {
+  background: #16a34a;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.contact-container button:hover {
+  background: #15803d;
+  transform: translateY(-2px);
+}
+
+body {
+  background: linear-gradient(135deg, #e8f5e9, #ffffff);
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>ActúaYa!</h1>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="sobre.html">Sobre Nosotros</a>
+    <a href="oportunidades.html">Oportunidades</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+</header>
+
+<div class="contact-container">
+  <h2>Contáctanos</h2>
+  <form>
+    <input type="text" placeholder="Tu nombre" required>
+    <input type="email" placeholder="Tu correo" required>
+    <textarea rows="5" placeholder="Tu mensaje" required></textarea>
+    <button>Enviar</button>
+  </form>
+</div>
+
+<footer>
+  © 2025 ActúaYa!
+</footer>
+
+</body>
+</html>
